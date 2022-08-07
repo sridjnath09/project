@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "docker images ls"
-                echo "testing"
+                sh "docker build -t sridjnath09/project ."
+                sh "docker container run -dt -P sridjnath09/project"                 echo "testing"
               
 }
         }
