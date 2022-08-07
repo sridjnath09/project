@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building.............!'
-                sh 'mvn package'            
+                docker ls
+              
 }
         }
         stage('Test') {
