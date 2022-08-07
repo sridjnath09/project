@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh "docker ls"
+                sh "docker images ls"
                 echo "testing"
               
 }
